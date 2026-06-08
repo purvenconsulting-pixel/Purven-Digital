@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1-on-1 Business Coaching — Purven Digital</title>
+<meta name="description" content="1-on-1 business coaching for Christian entrepreneurs. Faith-aligned strategy, digital product launches, growth systems, and real guidance from someone who gets it.">
+<link rel="canonical" href="https://purvendigital.com/coaching">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23132238'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='bold' font-size='14' fill='%234DBDE8' text-anchor='middle'%3EPD%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{--navy:#132238;--navy-light:#1A3D66;--cyan:#4DBDE8;--white:#ffffff;--gray:rgba(255,255,255,0.6);--border:rgba(77,189,232,0.15);--card-bg:rgba(26,61,102,0.35);}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);overflow-x:hidden;line-height:1.7;}
+a{text-decoration:none;color:inherit;}
+::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-track{background:var(--navy);}::-webkit-scrollbar-thumb{background:var(--navy-light);border-radius:3px;}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:70px;background:rgba(19,34,56,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+.nav-logo{display:flex;align-items:center;gap:10px;}.nav-logo img{height:36px;width:auto;}.nav-logo-text{font-family:'Poppins',sans-serif;font-size:1.2rem;font-weight:700;}.nav-logo-text span{color:var(--cyan);}
+.nav-links{display:flex;align-items:center;gap:32px;}.nav-links a{font-size:0.9rem;font-weight:500;color:rgba(255,255,255,0.75);transition:color 0.2s;}.nav-links a:hover,.nav-links a.active{color:var(--cyan);}
+.nav-cta{background:var(--cyan);color:var(--navy);padding:9px 22px;border-radius:8px;font-size:0.88rem;font-weight:700;transition:all 0.2s;}.nav-cta:hover{background:#6dcff0;}
+.nav-mobile-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}.nav-mobile-toggle span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px;}
+.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;z-index:999;background:rgba(19,34,56,0.98);backdrop-filter:blur(12px);padding:24px 40px 32px;border-bottom:1px solid var(--border);flex-direction:column;gap:20px;}.mobile-menu.open{display:flex;}.mobile-menu a{font-size:1rem;font-weight:500;color:rgba(255,255,255,0.8);padding:8px 0;border-bottom:1px solid var(--border);}.mobile-menu a:last-child{border-bottom:none;}
+.container{max-width:1100px;margin:0 auto;}
+.section-label{font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan);margin-bottom:12px;}
+.section-title{font-family:'Poppins',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;line-height:1.2;margin-bottom:16px;}
+.section-sub{font-size:1.05rem;color:var(--gray);max-width:600px;line-height:1.7;}
+.btn-primary{background:var(--cyan);color:var(--navy);padding:14px 32px;border-radius:10px;font-size:1rem;font-weight:700;transition:all 0.2s;display:inline-block;}
+.btn-primary:hover{background:#6dcff0;transform:translateY(-2px);box-shadow:0 8px 24px rgba(77,189,232,0.3);}
+.btn-outline{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,0.3);padding:14px 32px;border-radius:10px;font-size:1rem;font-weight:600;transition:all 0.2s;display:inline-block;}
+.btn-outline:hover{border-color:var(--cyan);color:var(--cyan);}
+
+/* PAGE HERO */
+.page-hero{padding:130px 24px 80px;text-align:center;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(77,189,232,0.07) 0%,transparent 70%);pointer-events:none;}
+.page-hero h1 span{color:var(--cyan);}
+
+/* WHAT'S COVERED */
+.coverage{padding:0 24px 80px;}
+.coverage-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px;max-width:900px;margin-left:auto;margin-right:auto;}
+.coverage-card{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:32px;display:flex;gap:20px;align-items:flex-start;transition:transform 0.2s,border-color 0.2s;}
+.coverage-card:hover{transform:translateY(-3px);border-color:rgba(77,189,232,0.35);}
+.coverage-num{font-family:'Poppins',sans-serif;font-size:2rem;font-weight:800;color:var(--cyan);opacity:0.4;line-height:1;flex-shrink:0;}
+.coverage-content h3{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:8px;}
+.coverage-content p{font-size:0.92rem;color:var(--gray);line-height:1.6;}
+
+/* HOW IT WORKS */
+.how-it-works{padding:80px 24px;background:rgba(26,61,102,0.15);border-top:1px solid var(--border);}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px;position:relative;}
+.steps::before{content:'';position:absolute;top:28px;left:calc(16.66% + 20px);right:calc(16.66% + 20px);height:1px;background:var(--border);}
+.step{text-align:center;}
+.step-num{width:56px;height:56px;border-radius:50%;background:var(--card-bg);border:2px solid var(--cyan);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Poppins',sans-serif;font-size:1.2rem;font-weight:800;color:var(--cyan);}
+.step h3{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;margin-bottom:8px;}
+.step p{font-size:0.88rem;color:var(--gray);}
+
+/* CTA BLOCK */
+.cta-block{padding:80px 24px;}
+.cta-inner{background:var(--card-bg);border:1px solid var(--border);border-radius:24px;padding:60px;text-align:center;max-width:700px;margin:0 auto;position:relative;overflow:hidden;}
+.cta-inner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--navy-light));}
+.cta-inner h2{font-family:'Poppins',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;margin-bottom:16px;}
+.cta-inner p{color:var(--gray);margin-bottom:32px;line-height:1.7;}
+.cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+footer{background:rgba(10,20,36,0.95);border-top:1px solid var(--border);padding:60px 40px 32px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;max-width:1100px;margin:0 auto 48px;}
+.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:12px;}.footer-logo img{height:32px;width:auto;}.footer-logo-text{font-family:'Poppins',sans-serif;font-size:1.15rem;font-weight:700;}.footer-logo-text span{color:var(--cyan);}
+.footer-brand-text{font-size:0.85rem;color:rgba(255,255,255,0.35);line-height:1.6;max-width:260px;}
+.footer-col-title{font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:16px;}
+.footer-col a{display:block;font-size:0.88rem;color:rgba(255,255,255,0.5);margin-bottom:10px;transition:color 0.2s;}.footer-col a:hover{color:var(--cyan);}
+.footer-bottom{max-width:1100px;margin:0 auto;padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-copy{font-size:0.82rem;color:rgba(255,255,255,0.3);}.footer-copy a{color:rgba(255,255,255,0.45);}.footer-copy a:hover{color:var(--cyan);}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease;}.fade-in.visible{opacity:1;transform:translateY(0);}
+@media(max-width:900px){nav{padding:0 24px;}.nav-links{display:none;}.nav-mobile-toggle{display:flex;}.coverage-grid{grid-template-columns:1fr;}.steps{grid-template-columns:1fr;}.steps::before{display:none;}.footer-grid{grid-template-columns:1fr 1fr;gap:32px;}}
+@media(max-width:600px){nav{padding:0 20px;}.cta-inner{padding:40px 24px;}.cta-btns{flex-direction:column;align-items:center;}.footer-grid{grid-template-columns:1fr;}.footer-bottom{flex-direction:column;text-align:center;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo"><img src="/assets/Purven Logo final.png" alt="Purven Digital" onerror="this.style.display='none'"><div class="nav-logo-text">Purven <span>Digital</span></div></a>
+  <div class="nav-links">
+    <a href="/">Home</a><a href="/products">Products</a><a href="/coaching" class="active">Coaching</a><a href="/about">About</a><a href="/contact">Contact</a>
+    <a href="/contact" class="nav-cta">Book a Call</a>
+  </div>
+  <div class="nav-mobile-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/">Home</a><a href="/products">Products</a><a href="/coaching">Coaching</a><a href="/about">About</a><a href="/contact">Contact</a>
+  <a href="/contact" style="color:var(--cyan);font-weight:700;">Book a Call →</a>
+</div>
+
+<div class="page-hero">
+  <div class="section-label">1-on-1 Coaching</div>
+  <h1 class="section-title">Build Your Business with <span>Guidance That Gets It</span></h1>
+  <p class="section-sub" style="margin:0 auto 36px;">1-on-1 business coaching to help Christian entrepreneurs launch and grow their digital business — with strategy, clarity, and faith at the center.</p>
+  <a href="/contact" class="btn-primary">Book a Call →</a>
+</div>
+
+<div class="coverage">
+  <div class="container" style="text-align:center;">
+    <div class="section-label fade-in">What We Cover</div>
+    <h2 class="section-title fade-in">Real Coaching for Real Entrepreneurs</h2>
+    <p class="section-sub fade-in" style="margin:0 auto;">Every session is tailored to where you are and where you want to go.</p>
+    <div class="coverage-grid">
+      <div class="coverage-card fade-in">
+        <div class="coverage-num">01</div>
+        <div class="coverage-content">
+          <h3>Business Strategy & Clarity</h3>
+          <p>Cut through the noise and get clear on your niche, offers, and business model. We'll define what you're building and why it makes sense — financially and spiritually.</p>
+        </div>
+      </div>
+      <div class="coverage-card fade-in">
+        <div class="coverage-num">02</div>
+        <div class="coverage-content">
+          <h3>Digital Product Launch</h3>
+          <p>From idea to sale — we'll map out your product, price it right, build the funnel, and get it in front of the right people. No tech overwhelm, just a clear launch plan.</p>
+        </div>
+      </div>
+      <div class="coverage-card fade-in">
+        <div class="coverage-num">03</div>
+        <div class="coverage-content">
+          <h3>Faith & Business Alignment</h3>
+          <p>Your business should feel like an extension of your calling — not a contradiction to it. We'll work on boundaries, purpose, and building a business that honors your values.</p>
+        </div>
+      </div>
+      <div class="coverage-card fade-in">
+        <div class="coverage-num">04</div>
+        <div class="coverage-content">
+          <h3>Growth & Systems</h3>
+          <p>Build the systems that let your business grow without burning you out — email lists, content pipelines, automations, and the routines that make scaling sustainable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="how-it-works">
+  <div class="container" style="text-align:center;">
+    <div class="section-label fade-in">How It Works</div>
+    <h2 class="section-title fade-in">Simple. Focused. Results-Oriented.</h2>
+    <div class="steps">
+      <div class="step fade-in">
+        <div class="step-num">1</div>
+        <h3>Book Your Call</h3>
+        <p>Fill out a short intake form so I can understand your situation and goals before we meet.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">2</div>
+        <h3>Strategy Session</h3>
+        <p>We meet 1-on-1, dig into your business, and build a clear action plan tailored to your next milestone.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">3</div>
+        <h3>Execute & Grow</h3>
+        <p>You leave with clarity, a plan, and the tools to move forward. Follow-up support available.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-block">
+  <div class="cta-inner fade-in">
+    <div class="section-label">Ready to Start?</div>
+    <h2>Let's Build Something Real Together</h2>
+    <p>No fluff. No generic advice. Just focused, faith-aligned coaching built around your actual business and goals.</p>
+    <div class="cta-btns">
+      <a href="/contact" class="btn-primary">Book a Call →</a>
+      <a href="/products" class="btn-outline">Browse Products First</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo"><img src="/assets/Purven Logo final.png" alt="Purven Digital" onerror="this.style.display='none'"><div class="footer-logo-text">Purven <span>Digital</span></div></div><p class="footer-brand-text">Digital products and coaching for Christian entrepreneurs. A Purven Consulting product.</p></div>
+    <div class="footer-col"><div class="footer-col-title">Navigation</div><a href="/">Home</a><a href="/products">Products</a><a href="/coaching">Coaching</a><a href="/about">About</a><a href="/contact">Contact</a></div>
+    <div class="footer-col"><div class="footer-col-title">Products</div><a href="https://purvendigital.systeme.io/7736b239" target="_blank" rel="noopener">Purven Business Pulse</a><a href="/products">All Products</a><a href="https://purvenhub.com" target="_blank" rel="noopener">Free Tools (PurvenHub)</a></div>
+    <div class="footer-col"><div class="footer-col-title">Legal</div><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="/contact">Contact Us</a></div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Purven Digital. A <a href="https://purvenconsulting.com">Purven Consulting</a> product.</p>
+    <p class="footer-copy">This site may display ads and uses cookies. See our <a href="/privacy">Privacy Policy</a>.</p>
+  </div>
+</footer>
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:0.12});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
